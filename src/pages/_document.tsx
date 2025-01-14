@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <title>502 Bad Gateway</title>
+      <title>The Village Lunatic</title>
       <meta name="description" content="Your source for bizarre and hilarious fake news!" />
 
       <meta property="og:url" content="https://thevillagelunatic.com/" />
