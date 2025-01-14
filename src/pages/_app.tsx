@@ -3,10 +3,8 @@ import type { AppProps } from "next/app";
 import {
   AppShell,
   Button,
-  Center,
   Group,
   MantineProvider,
-  Text,
   createTheme,
 } from "@mantine/core";
 import "@mantine/core/styles.css";
