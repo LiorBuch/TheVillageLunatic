@@ -1,7 +1,7 @@
-export default function Sport() {
+export default function Gossip() {
     return (
       <div>
-        sports
+        gossip
       </div>
     );
   }

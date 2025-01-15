@@ -1,7 +1,7 @@
-export default function Sport() {
+export default function Food() {
     return (
       <div>
-        sports
+        food
       </div>
     );
   }

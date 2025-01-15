@@ -1,7 +1,7 @@
-export default function Sport() {
+export default function Nature() {
     return (
       <div>
-        sports
+        nature
       </div>
     );
   }

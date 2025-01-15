@@ -3,8 +3,11 @@ import type { AppProps } from "next/app";
 import {
   AppShell,
   Button,
+  Center,
+  Flex,
   Group,
   MantineProvider,
+  Stack,
   createTheme,
 } from "@mantine/core";
 import "@mantine/core/styles.css";
@@ -17,7 +20,7 @@ const theme = createTheme({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <MantineProvider theme={theme}>
-      <AppShell header={{ height: 115 }} padding="md">
+      <AppShell header={{ height: 155 }} padding="md">
         <AppShell.Header styles={{ header: { backgroundColor: "#E6D7AA" } }}>
           <HeaderData />
         </AppShell.Header>
@@ -31,20 +34,35 @@ export default function App({ Component, pageProps }: AppProps) {
 
 function HeaderData() {
   return (
-    <Group justify="space-between" pl={"sm"} pr={"sm"}>
-      <Button component={Link} href={"/sport"}>
-        Sport
-      </Button>
-      <Button>Science</Button>
-      <Button component={Link} href={"/village"}>
-        The Village
-      </Button>
-      <Image width={200} height={100} src={"/site_banner.png"} alt={"banner"} />
-      <Button component={Link} href={"/"}>
-        Home
-      </Button>
-      <Button>Nature</Button>
-      <Button>Automobile</Button>
-    </Group>
+    <Center>
+      <Flex justify={"center"} direction={"column"}>
+        <Center>
+          <Image
+            width={200}
+            height={100}
+            src={"/site_banner.png"}
+            alt={"banner"}
+          />
+        </Center>
+        <Group justify="space-between" pl={"sm"} pr={"sm"}>
+          <Button component={Link} href={"/sport"}>
+            Sport
+          </Button>
+          <Button>Gaming and Digital</Button>
+          <Button>Science</Button>
+          <Button component={Link} href={"/village"}>
+            The Village
+          </Button>
+          <Button>Gossip</Button>
+          <Button component={Link} href={"/"}>
+            Home
+          </Button>
+          <Button>Nature</Button>
+          <Button>Automobile</Button>
+          <Button>Food</Button>
+          <Button>Fashion</Button>
+        </Group>
+      </Flex>
+    </Center>
   );
 }

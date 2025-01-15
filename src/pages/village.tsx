@@ -1,7 +1,7 @@
 export default function Village() {
     return (
       <div>
-        Meet the team
+        people of the village
       </div>
     );
   }
